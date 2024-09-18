@@ -1,0 +1,422 @@
+/**********************************************************/
+/**                   About us                           **/
+/**********************************************************/
+
+
+:root {
+  /* Color scheme */
+  --hoop-red: #ED2A42;
+
+  /* Decoration */
+  --heading-curve-width: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.custom-hoop-a-thon *{
+  /* reset everything inside the about us page */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /*border: green 2px solid;*/
+}
+
+.custom-hoop-a-thon{
+  /* about us page */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.custom-hoop-a-thon .hoop-a-thon-heading{
+  /* about us heading */
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  min-width: 100%;
+  position: relative;
+
+
+}
+
+.custom-hoop-a-thon .hoop-a-thon-heading .hoop-logo{
+  /* about us logo */
+  max-width: 30rem;
+  width: 20vw;
+  min-width: 20rem;
+  height: auto;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-hoop-a-thon .hoop-a-thon-heading h1{
+  padding: 0;
+  margin: 0;
+  font-size: clamp(2.5rem, 11vw, 7rem);
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 2px  var(--hoop-red);
+  text-transform: uppercase;   /* Make text all caps */
+  font-family: 'Arial', sans-serif;
+  z-index: 5;
+  -webkit-font-smoothing: antialiased;
+  align-self: center;
+}
+
+.custom-hoop-a-thon .hoop-a-thon-heading h2{
+  padding: 0 0 3rem 0;
+  margin: 0;
+  font-size: clamp(1.7rem, 5.5vw, 3.7rem);
+  font-weight: 700;
+  letter-spacing: clamp(5px, 1.5vw, 10px);
+  color: var(--hoop-red);
+  text-transform: uppercase;   /* Make text all caps */
+  font-family: 'Montserrat', sans-serif;
+  z-index: 5;
+  -webkit-font-smoothing: antialiased;
+  align-self: center;
+}
+
+.custom-hoop-a-thon .hoop-a-thon-heading h3{
+  padding: 0;
+  margin: 0;
+  font-size: clamp(1.7rem, 5.5vw, 3.7rem);
+  color: rgba(0, 0, 0, 0.68);
+  font-family: 'Karla Light', sans-serif;
+  z-index: 5;
+  -webkit-font-smoothing: antialiased;
+  align-self: center;
+}
+
+.custom-hoop-a-thon .hoop-a-thon-heading p{
+  margin: 0 3rem;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  align-self: center;
+  max-width: 800px;
+}
+
+.custom-hoop-a-thon .hoop-a-thon-heading .heading-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem clamp(0.5rem, 0.5rem + 2vw, 10em);
+}
+
+.custom-hoop-a-thon .hoop-a-thon-heading .heading-links a {
+  padding: 0;
+  margin: 0;
+  font-size: clamp(14px, 2vw, 16px);
+  text-align: center;
+  font-weight: bold;
+  color: var(--hoop-red);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+}
+
+.custom-hoop-a-thon .hoop-a-thon-heading .heading-links p {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+.custom-hoop-a-thon .hoop-a-thon-heading .heading-links a:hover {
+  color: #a31414; /* Change color on hover */
+}
+
+.button_red {
+  display: inline-block;
+  margin: 3rem 0;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: transparent; /* Using transparent to override '1px solid transparent' */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 1.5rem 5rem; /* Overridden padding */
+  font-size: clamp(1rem, 1rem + 5vw, 4rem); /* Overridden font-size */
+  line-height: 1.42857143;
+  border-radius: 2rem; /* Overridden border-radius */
+  min-width: 75px;
+  position: relative;
+  pointer-events: auto;
+  background-color: var(--hoop-red); /* Overridden background-color */
+  color: white;
+  transition: all .3s ease-in-out;
+  align-self: center;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button_red:focus {
+  color: white;
+}
+
+.button_red:hover {
+  box-shadow: .5rem .5rem 1.7rem rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+  color: white;
+}
+
+.button_red::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg);
+  transition: none; /* Remove transition initially */
+}
+
+ .button_red:hover::before {
+  transition: left 0.5s ease-in-out; /* Add transition on hover */
+  left: 150%;
+}
+
+
+/**********************************************************/
+
+
+.hoop-a-thon-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hoop-a-thon-content .content-card{
+  border-radius: 28px;
+  background-color: #ffe9e9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 24px;
+  overflow: hidden;
+  max-width: 500px;
+}
+
+.hoop-a-thon-content .content-card .card-text{
+  padding: 3rem 3rem 3rem 3rem;
+}
+
+.hoop-a-thon-content .content-card h1{
+  font-size: clamp(1.7rem, 5.5vw, 3.7rem);
+  font-weight: 700;
+  color: rgb(60, 64, 67);
+  font-family: 'Montserrat', sans-serif;
+  z-index: 5;
+  -webkit-font-smoothing: antialiased;
+  align-self: center;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+
+.hoop-a-thon-content .content-card h2{
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: rgb(60, 64, 67);
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hoop-a-thon-content .content-card h3{
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: rgb(136, 147, 152);
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hoop-a-thon-content .content-card p{
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: rgb(60, 64, 67);
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  align-self: center;
+}
+
+.hoop-a-thon-content .content-card .card-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 0 0 0;
+  margin: 0;
+}
+
+.hoop-a-thon-content .content-card .card-icons a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(60, 64, 67);
+  text-decoration: underline
+}
+.hoop-a-thon-content .content-card .card-icons a:hover {
+  color: #dc0d25; /* Change color on hover */
+
+}
+
+.hoop-a-thon-content .content-card .card-icons a img {
+  width: auto;
+  height: 20px;
+  margin-right: 5px;
+}
+.hoop-a-thon-content .content-card .card-image img{
+  width: 100%;
+  height: auto;
+  margin: 0;
+
+}
+
+.hoop-a-thon-content .content-card:nth-of-type(3) {
+  background-color: #e0f2ff;
+}
+
+
+.hoop-a-thon-content .content-card:nth-of-type(3) .card-image img{
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+
+.hoop-a-thon-content .content-card:nth-of-type(5) {
+  background-color: #e9effd;
+}
+
+.hoop-a-thon-content .content-card:nth-of-type(7) {
+  background-color: #e0f2ff;
+}
+
+.hoop-a-thon-content .content-card:nth-of-type(9) {
+  background-color: #ffe0ed;
+}
+
+.hoop-a-thon-content .content-card:nth-of-type(7)  .card-image img{
+  margin-bottom: 4rem;
+}
+
+.hoop-a-thon-content .content-card .card-columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem 3rem 1rem;
+}
+
+.hoop-a-thon-content .content-card .card-columns a{
+  height: auto;
+  padding: 1rem;
+  background-color: #f9fdff;
+  border-radius:28px;
+  margin-top: 1rem;
+}
+
+.hoop-a-thon-content .content-card .card-columns a:hover{
+  box-shadow: .5rem .5rem 1.7rem rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: .5rem;
+}
+
+.right-column {
+  margin-left: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (min-width: 1024px) { /* Added this media query block */
+  .hoop-a-thon-content .content-card {
+    flex-direction: row; /* Change this line within media query */
+    max-width: 100%; /* Ensure the card takes full width within media query */
+  }
+
+  .hoop-a-thon-content .content-card .card-text, /* Added these lines within media query */
+  .hoop-a-thon-content .content-card .card-image {
+    flex: 1; /* Allow text and image to take up equal space */
+  }
+
+  .hoop-a-thon-content .content-card .card-image img {
+    width: 100%; /* Ensure images take full width within their container */
+    height: auto;
+  }
+
+  .hoop-a-thon-content .content-card:nth-child(3) { /* Added this line within media query */
+    flex-direction: row-reverse; /* Reverse the order for odd content cards */
+  }
+
+  .hoop-a-thon-content .content-card:nth-child(7) { /* Added this line within media query */
+    flex-direction: row-reverse; /* Reverse the order for odd content cards */
+  }
+
+  .hoop-a-thon-content .content-card:nth-child(11) { /* Added this line within media query */
+    flex-direction: row-reverse; /* Reverse the order for odd content cards */
+  }
+}
+
+
+/**********************************************************/
+/**                   Utilities                          **/
+/**********************************************************/
+
+.spacer{
+  height: 120px;
+  width: 100vw;
+
+}
+
+@media (max-width: 1024px){
+  .spacer{
+    height: 60px;
+  }
+}
+
+/**********************************************************/
+/**                   Ad                                 **/
+/**********************************************************/
+
+.custom-hoop-a-thon #AdvertisementHomePageRotator{
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 60px;
+}

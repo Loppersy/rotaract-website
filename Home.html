@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+    <meta charset="utf-8">
+    <title>Home Page | Rotaract Club of Prince George</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Apple Touch Icons -->
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/macIcon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/macIcon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/macIcon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/macIcon.png">
+
+    <!-- Priority CSS Files -->
+    <link rel="stylesheet" href="assets/rotaract_hoop-a-thon.css">  <!-- Hoop-A-Thon CSS -->
+    <link rel="stylesheet" href="assets/rotaract.css">              <!-- Rotaract CSS -->
+
+    <!-- Other CSS Files -->
+    <link rel="stylesheet" href="assets/all.min.css">
+    <link rel="stylesheet" href="assets/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/S4-WhiteAzure.dev.min.css">
+    <link rel="stylesheet" href="assets/VisionFloating-media.min.css">
+
+    <!-- JavaScript Files -->
+    <script src="assets/jquery-3.5.1.min.js"></script>
+    <script src="assets/jquery-migrate-3.3.2.min.js"></script>
+    <script src="assets/jquery.maskedinput.min.js"></script>
+    <script src="assets/jquery-ui.min.js"></script>
+    <script src="assets/jquery.validate.min.js"></script>
+    <script src="assets/jquery.validate.unobtrusive.min.js"></script>
+    <script src="assets/ie7json.min.js"></script>
+    <script src="assets/lazyimage.min.js"></script>
+    <script src="assets/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script src="assets/message.tooltip.progress.min.js"></script>
+    <script src="assets/forms.v2.min.js"></script>
+    <script src="assets/navbar.all.min.js"></script>
+    <script src="assets/back.top.min.js"></script>
+    <script src="assets/embed.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            window.cookieconsent.initialise({
+                "theme": "classic",
+                "position": "bottom-left",
+                "content": {
+                    "href": "privacy-policy.html",
+                    "message": "This website uses cookies to ensure you get the best experience on our website.",
+                    "link": "Cookie Policy",
+                    "dismiss": "GOT IT!"
+                }
+            });
+        });
+    </script>
+
+    <!-- Application Insights -->
+    <script type="text/javascript">
+        var appInsights=window.appInsights||function(a){
+            function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+        }({
+            instrumentationKey: "a70b77a5-af81-485f-9e2b-986a6d0efdf2"
+        });
+
+        window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FEEJLSGYZ2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FEEJLSGYZ2');
+    </script>
+
+    <!-- Cookie Consent -->
+    <script async src="https://globalassets.clubrunner.ca/scripts/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+
+</head>
+
+<body id="bodyContent">
+<div id="fb-root"></div>
+<script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+    </script>
+<div class="navbar-fixed-top float-menu">
+<div class="login-band">
+<div class="container">
+<div class="loginbar">
+<div class="login-area">
+<div class="loginArea2">
+<div class="loginArea3">
+<span class="logout-link">
+<a href="https://portal.clubrunner.ca/15849/User/Login?OriginalUrl=Obh4kJkhzjE++9WP8Auy84H4WJK2gu2EBTPxNWxsolZgwaPbj7tAgT8eC4Qibn8H">Member Login</a>
+</span>
+</div>
+</div>
+<script type="text/javascript">
+
+    $(function () {
+        $("#searchString").keyup(function (event) {
+            if (event.keyCode == 13) {
+                doSearch();
+            }
+        });
+    });
+
+
+    function doSearch() {
+        var searchString = $("#searchString").val();
+
+        searchString = replaceAll(searchString, ".", "-~0-");
+        searchString = replaceAll(searchString, "%", "-~1-");
+        searchString = replaceAll(searchString, "?", "-~2-");
+        searchString = replaceAll(searchString, ":", "-~3-");
+        searchString = replaceAll(searchString, "/", "-~4-");
+        searchString = replaceAll(searchString, "+", "-~5-");
+        searchString = replaceAll(searchString, "*", "-~6-");
+        searchString = replaceAll(searchString, "&", "-~7-");
+        searchString = replaceAll(searchString, "\"", "-~8-");
+
+        searchString = encodeURIComponent(searchString);
+        console.log(searchString);
+        var redirectUrl = $('#baseHref').attr("href") + "Search/" + searchString;
+
+        console.log(redirectUrl);
+
+        window.location.href = redirectUrl;
+    }
+
+    //	function replaceAll(str, find, replace) {
+    //	    return str.replace(new RegExp(find, 'g'), replace);
+    //	}
+
+    function replaceAll(str, search, replacement) {
+        return str.split(search).join(replacement);
+    };
+
+    // Search focus
+    $('#searchString').on('focus', function () {
+        $('.input-group-addon').addClass('focus');
+        $(this).addClass('active');
+    });
+
+    $('#searchString').on('focusout', function () {
+        $('.input-group-addon').removeClass('focus');
+    });
+</script>
+</div>
+</div>
+</div>
+</div>
+<div id="TraceInfo">
+</div>
+<nav aria-label="page navigation" class="navbar navbar-default">
+<div class="container float-menu-vertical-align">
+<div class="navbar-header">
+<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle" data-target="#navbar" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="" tabindex="-1">
+<img alt="Prince George Rotaract logo" role="img" src="assets\LightBG_lightbgrotaract-logo_20230801-005915.png"/>
+</a>
+</div>
+<div aria-expanded="true" class="navbar-collapse collapse" id="navbar">
+<ul class="nav navbar-nav">
+    <li class="">
+        <a class="" href="Home.html" tabindex="0" target="_self" title="">
+            Home
+        </a>
+    </li>
+    <li class="">
+        <a class="" href="club-executives.html" tabindex="0" target="_self" title="">
+            Club Executives
+        </a>
+    </li>
+    <li class="">
+        <a class="" href="stories.html" tabindex="0" target="_self" title="">
+            Stories
+        </a>
+    </li>
+    <li class="">
+        <a class="" href="" tabindex="0" target="_self" title="">
+            Events Calendar
+        </a>
+    </li>
+    <li class="">
+        <a class="menu-item menu-item-secondary" href="Hoop-A-Thon.html" tabindex="0" target="_self" title="">
+            Hoop-A-Thon 2024
+        </a>
+    </li>
+    <li class="">
+        <a class="menu-item menu-item-primary" href="contactus.html" tabindex="0" target="_self" title="">
+            Contact us
+        </a>
+    </li></ul>
+</div>
+</div>
+</nav>
+</div>
+<main class="main-content-wrapper homepage custom-home-page">
+<div class="content-wrapper">
+</div>
+<div class="HomeContentWrapper">
+<script async="" src="https://globalassets.clubrunner.ca/scripts/uiblock/jquery.blockUI.min.js?_=638587195618229330" type="text/javascript"></script>
+<div id="blockUiMessage" style="display: none;">
+<div id="bulletinPublishing2"><i class="fas fa-spinner fa-spin"></i></div>
+</div>
+<script type="text/javascript">
+    // Prevent multiple submit
+    var canBlock = true;
+    $(function ()
+    {
+        $('form').submit(function()
+        {
+            // Don't block UI on CkEditor5 EmbedMedia form submit.
+            if (this.classList.contains('ck-media-form')) {
+                return;
+            }
+            if (!canBlock)
+            {
+                return true;
+            }
+            else
+                if ($("form").valid())
+                {
+                    blockUi();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+        });
+    });
+
+
+    function blockUi()
+    {
+        $.blockUI(
+            {
+                theme: true,
+                title: '',
+                message: $("#blockUiMessage"),
+                baseZ: 2000,
+                draggable: false,
+                onBlock: function() {
+					$(".blockPage").addClass( "" )
+				}
+
+            });
+    }
+
+    function unBlockUi()
+    {
+        $.unblockUI();
+
+    }
+
+
+    function setNoBlock(){
+        canBlock = false;
+    }
+
+    function setBlock() {
+        canBlock = true;
+    }
+</script>
+<section class="band-1 band-wrapper"><div class="single-column"><section class="PageWidget" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;padding-right: 0px;">
+<div class="boxContainer1NoFrameNoBorder">
+<div class="boxContainer2NoFrameNoBorder">
+<div class="MainWidgetWrapper CustomWidget">
+<div class="WidgetNoBorder" style="">
+<div style="">
+<div class="WidgetWrapper">
+<div class="CustomWidgetBody">
+<div ckeditortoolbarsname="CkEditorToolBarLight" class="inlineEditor" contenteditable="false" id="bcw_020d2514-e945-4745-8928-79b06e6f74fb" title="" widgetdataid="020d2514-e945-4745-8928-79b06e6f74fb" widgetid="e1309241-ea37-4c17-858c-1a18002a22a3" widgetname="background-images " widgetsystemname="CustomWidget">
+<div class="background-images-container">
+<div class="background-images"><img alt="" id="slider" src="assets\Colour-Walk-17_20230711-001648_20230801-071628.png"/> <img alt="" id="slider2" src="assets\DC--22-Photos-32.JPG"/> <script type="text/javascript">
+/* To add more images, just add their links to the "const images" variable down there */
+                    const images = ["https://clubrunner.blob.core.windows.net/00000015849/Images/Colour-Walk-17_20230711-001648_20230801-071628.png",
+                        "https://clubrunner.blob.core.windows.net/00000015849/Images/DC--22-Photos-32.JPG",
+                        "https://clubrunner.blob.core.windows.net/00000015849/Images/District-Conference--22-24.jpg"];
+                                                            let ind = 0;
+                    setInterval( function() {
+                    document.getElementById("slider2").src = images[ind];
+                    document.getElementById("slider").style.opacity = 0;
+                    setTimeout(function() {
+                        document.getElementById("slider").src = images[ind];
+                        document.getElementById("slider").style.opacity = 1;
+                    }, 500);
+                    if(ind < images.length - 1) {
+                            ind++;
+                    } else {
+                        ind = 0;
+                    }
+                    }, 5000)
+                </script></div>
+</div>
+</div>
+</div>
+<span id="title_020d2514-e945-4745-8928-79b06e6f74fb" style="display:none">&lt;div&gt;background-images&lt;/div&gt;
+
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="PageWidget" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;padding-right: 0px;">
+<div class="boxContainer1NoFrameNoBorder">
+<div class="boxContainer2NoFrameNoBorder">
+<div class="MainWidgetWrapper CustomWidget">
+<div class="WidgetNoBorder" style="">
+<div style="">
+<div class="WidgetWrapper">
+<div class="CustomWidgetBody">
+<div ckeditortoolbarsname="CkEditorToolBarLight" class="inlineEditor" contenteditable="false" id="bcw_566092b0-5a02-490d-a807-6d0ac026bf87" title="" widgetdataid="566092b0-5a02-490d-a807-6d0ac026bf87" widgetid="e1309241-ea37-4c17-858c-1a18002a22a3" widgetname="banner-details " widgetsystemname="CustomWidget">
+<div class="banner-details-container">
+<div class="banner-details">
+<h2>Welcome to the </h2>
+<h1>ROTARACT CLUB</h1>
+<h1><span style="color:#FFFFFF">of</span> PRINCE GEORGE</h1>
+<p>Where young professionals and students make a change</p>
+<a class="get-involved-button" href="https://portal.clubrunner.ca/15849/singleemail/contactus">Get involved!<img alt="" class="get-involved-arrow" src="https://clubrunner.blob.core.windows.net/00000015849/Images/arrow-right.png"/></a></div>
+</div>
+</div>
+</div>
+<span id="title_566092b0-5a02-490d-a807-6d0ac026bf87" style="display:none">&lt;div&gt;banner-details&lt;/div&gt;
+
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="PageWidget" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;padding-right: 0px;">
+<div class="boxContainer1NoFrameNoBorder">
+<div class="boxContainer2NoFrameNoBorder">
+<div class="MainWidgetWrapper CustomWidget">
+<div class="WidgetNoBorder" style="">
+<div style="">
+<div class="WidgetWrapper">
+<div class="CustomWidgetBody">
+<div ckeditortoolbarsname="CkEditorToolBarLight" class="inlineEditor" contenteditable="false" id="bcw_f0b9112b-a92a-4651-af5f-841ea05c71cc" title="" widgetdataid="f0b9112b-a92a-4651-af5f-841ea05c71cc" widgetid="e1309241-ea37-4c17-858c-1a18002a22a3" widgetname="see-more " widgetsystemname="CustomWidget">
+<div class="see-more scroll-reveal top"><a href="#see-more"><img alt="" src="https://clubrunner.blob.core.windows.net/00000015849/Images/chevron-compact-down.png"/></a></div>
+</div>
+</div>
+<span id="title_f0b9112b-a92a-4651-af5f-841ea05c71cc" style="display:none">&lt;div&gt;see-more&lt;/div&gt;</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section></div></section>
+<section class="band-5 band-wrapper"><div class="single-column"><section class="PageWidget" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;padding-right: 0px;">
+<div class="boxContainer1NoFrameNoBorder">
+<div class="boxContainer2NoFrameNoBorder">
+<div class="MainWidgetWrapper CustomWidget">
+<div class="WidgetNoBorder" style="">
+<div style="">
+<div class="WidgetWrapper">
+<div class="CustomWidgetBody">
+<div ckeditortoolbarsname="CkEditorToolBarLight" class="inlineEditor" contenteditable="false" id="bcw_a3765df0-0899-478f-8ed3-9a2d6f2004bd" title="" widgetdataid="a3765df0-0899-478f-8ed3-9a2d6f2004bd" widgetid="e1309241-ea37-4c17-858c-1a18002a22a3" widgetname="scroller helper " widgetsystemname="CustomWidget">
+<div id="see-more"><script type="text/javascript">
+    window.addEventListener('scroll', function() {
+        try {
+            if (window.scrollY < 100) {
+                let els = document.querySelectorAll('.scroll-reveal')
+                els = Array.from(els)
+                els.forEach(el => {el.classList.remove('scrolled')})
+            }
+        } catch (error) {
+            if (error instanceof TypeError) {
+                // do nothing
+            } else {
+                throw error;
+            }
+        }
+    });
+    let els = document.querySelectorAll('.scroll-reveal')
+    els = Array.from(els)
+    els.forEach(el => {
+        let observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add('scrolled')
+                }
+            })
+        }, {rootMargin: '-200px'})
+        observer.observe(el)
+    })
+  </script></div>
+</div>
+</div>
+<span id="title_a3765df0-0899-478f-8ed3-9a2d6f2004bd" style="display:none">&lt;div&gt;scroller helper&lt;/div&gt;
+
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="PageWidget" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;padding-right: 0px;">
+<div class="boxContainer1NoFrameNoBorder">
+<div class="boxContainer2NoFrameNoBorder">
+<div class="MainWidgetWrapper CustomWidget">
+<div class="WidgetNoBorder" style="">
+<div style="">
+<div class="WidgetWrapper">
+<div class="CustomWidgetBody">
+<div ckeditortoolbarsname="CkEditorToolBarLight" class="inlineEditor" contenteditable="false" id="bcw_1f331a0a-0f91-4542-8524-8667615b0bc4" title="" widgetdataid="1f331a0a-0f91-4542-8524-8667615b0bc4" widgetid="46ad117f-edf0-4c86-b438-18eed9de0109" widgetname="What is Rotaract " widgetsystemname="CustomWidget">
+<div class="what-is-rotaract">
+<div class="wis-content">
+<div class="my-img-container"><img alt="" src="assets\tmp_71a6e561-6c4d-42ed-b0dc-490e76ab1410-2.jpg"/></div>
+<div class="info">
+<h1>About us</h1>
+<div class="text-container">
+<p>We are a group of young professionals and students who are passionate about making a positive difference in the Prince George community and the world.</p>
+<p>We meet twice a month, either in-person or virtually, to discuss and participate in various service projects, professional development activities, and social events that align with our values and goals.</p>
+</div>
+</div>
+</div>
+<img alt="" class="logo-bg" src="assets\rotary-logo-pink.png"/></div>
+</div>
+</div>
+<span id="title_1f331a0a-0f91-4542-8524-8667615b0bc4" style="display:none">&lt;div&gt;What is Rotaract&lt;/div&gt;
+
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="PageWidget" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;padding-right: 0px;">
+<div class="boxContainer1NoFrameNoBorder">
+<div class="boxContainer2NoFrameNoBorder">
+<div class="MainWidgetWrapper CustomWidget">
+<div class="WidgetNoBorder" style="">
+<div style="">
+<div class="WidgetWrapper">
+<div class="CustomWidgetBody">
+<div ckeditortoolbarsname="CkEditorToolBarLight" class="inlineEditor" contenteditable="false" id="bcw_f734ac8b-0831-41f2-8c4f-919bad331050" title="" widgetdataid="f734ac8b-0831-41f2-8c4f-919bad331050" widgetid="46ad117f-edf0-4c86-b438-18eed9de0109" widgetname="Our vision " widgetsystemname="CustomWidget">
+<div class="our-values">
+<div class="ov-content">
+<div class="info">
+<h1>What is Rotaract?</h1>
+<p>Rotaract is a global organization supported by Rotary International. It empowers people aged 18 and older to create positive change in their local communities and around the world.</p>
+<p>The Prince George Rotaract Club is also sponsored by the three Rotary Clubs in Prince George: Downtown, Nechako, and Yellowhead. They offer us guidance, support, and partnership.</p>
+<a href="https://www.rotary.org/en" target="_blank">Learn more about Rotary International</a>
+</div>
+<div class="my-img-container"><img alt="" src="assets\DC--22-Photos-11.JPG"/></div>
+</div>
+</div>
+</div>
+</div>
+<span id="title_f734ac8b-0831-41f2-8c4f-919bad331050" style="display:none">&lt;div&gt;Our vision&lt;/div&gt;
+
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="PageWidget" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;padding-right: 0px;">
+<div class="boxContainer1NoFrameNoBorder">
+<div class="boxContainer2NoFrameNoBorder">
+<div class="MainWidgetWrapper CustomWidget">
+<div class="WidgetNoBorder" style="">
+<div style="">
+<div class="WidgetWrapper">
+<div class="CustomWidgetBody">
+<div ckeditortoolbarsname="CkEditorToolBarLight" class="inlineEditor" contenteditable="false" id="bcw_33e88ede-481c-47c6-ba5b-47734af95b0f" title="" widgetdataid="33e88ede-481c-47c6-ba5b-47734af95b0f" widgetid="46ad117f-edf0-4c86-b438-18eed9de0109" widgetname="Why join us " widgetsystemname="CustomWidget">
+<div class="why-join">
+<h1>Why join Rotaract?</h1>
+<div class="reasons">
+<div class="reason"><img alt="" src="assets\give.png"/>
+<h1>Make an impact</h1>
+<p>Be a part of a local movement that strives to create positive change in the Prince George community and the world.</p>
+</div>
+<div class="reason"><img alt="" src="assets\network.png"/>
+<h1>Expand your network</h1>
+<p>Connect with like-minded people who share your passion for service above self by joining a be part of a worldwide network of young leaders.</p>
+</div>
+<div class="reason"><img alt="" src="assets\build.png"/>
+<h1>Build skills</h1>
+<p>Improve your leadership, communication, teamwork, project management, and more by taking on roles and responsibilities in the club</p>
+</div>
+<div class="reason"><img alt="" src="assets\smiley.png"/>
+<h1>Have fun</h1>
+<p>Enjoy social events and activities with your fellow club members, such as dining out, game night, or even travel opportunities.</p>
+</div>
+<div class="reason"><img alt="" src="assets\growth.png"/>
+<h1>Personal growth</h1>
+<p>Step out of your comfort zone by trying new things and learning new skills. Rotaract helps you grow as a person and a leader.</p>
+</div>
+<div class="reason"><img alt="" src="assets\learn.png"/>
+<h1>Rotary mentorship</h1>
+<p>Learn from the experience and guidance of our sponsor Rotary clubs, who are established professionals and community leaders.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<span id="title_33e88ede-481c-47c6-ba5b-47734af95b0f" style="display:none">&lt;div&gt;Why join us&lt;/div&gt;</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="PageWidget" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;padding-right: 0px;">
+<div class="boxContainer1NoFrameNoBorder">
+<div class="boxContainer2NoFrameNoBorder">
+<div class="MainWidgetWrapper CustomWidget">
+<div class="WidgetNoBorder" style="">
+<div style="">
+<div class="WidgetWrapper">
+<div class="CustomWidgetBody">
+<div ckeditortoolbarsname="CkEditorToolBarLight" class="inlineEditor" contenteditable="false" id="bcw_5f953085-6a8b-4bab-852f-4d2b7e28c6b5" title="" widgetdataid="5f953085-6a8b-4bab-852f-4d2b7e28c6b5" widgetid="46ad117f-edf0-4c86-b438-18eed9de0109" widgetname="Current Projects " widgetsystemname="CustomWidget">
+<div class="current-projects">
+<div class="current-projects-content">
+<h1>Current Projects</h1>
+<div class="row">
+<div class="col-xs-12 col-sm-6 preformatted-block">
+<div class="predefined-image">
+<div id="imgWrapper069d92d6-0984-4a04-bda9-ecfdce3d988b_b6206544-612b-4def-b6e7-ad553400e2d5"><span class="lazyloaded-container"><img class="lazyloaded ls-is-cached" data-src="" height="1485" id="img069d92d6-0984-4a04-bda9-ecfdce3d988b_b6206544-612b-4def-b6e7-ad553400e2d5" loading="lazy" src="assets\20220831_193535.jpg" style="margin:0px" width="1980"/> </span></div>
+</div>
+<div class="predefined-content">
+<div areaid="5f4da7cd-3493-452b-85ab-43c71d1aa7f6" ckeditortoolbarsname="CkEditorToolBarLight" class="inlineEditor" contenteditable="false" id="bcw_069d92d6-0984-4a04-bda9-ecfdce3d988b_5f4da7cd-3493-452b-85ab-43c71d1aa7f6" title="" widgetdataid="069d92d6-0984-4a04-bda9-ecfdce3d988b" widgetid="22a14ff4-bc6c-47ef-bdf6-66ad813473e0" widgetname="Content" widgetsystemname="PagePredefined">
+<h2>People of PG</h2>
+<div>
+<div>We spread awareness and bring a face to impacted individuals to reduce the local stigma associated with homelessness. To do so, we invite various community groups to share with us the impact they have on the community and the homeless population.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 preformatted-block">
+<div class="predefined-image">
+<div id="imgWrapper069d92d6-0984-4a04-bda9-ecfdce3d988b_c819c368-9a98-48d5-941c-d9e93f669cc8"><span class="lazyloaded-container"><img class="lazyloaded ls-is-cached" data-src="https://clubrunner.blob.core.windows.net/00000015849/Images/355424134_165228133208491_4883744270250488813_n.jpeg" hspace="0" id="img069d92d6-0984-4a04-bda9-ecfdce3d988b_c819c368-9a98-48d5-941c-d9e93f669cc8" loading="lazy" src="assets\355424134_165228133208491_4883744270250488813_n.jpeg" vspace="0"/> </span></div>
+</div>
+<div class="predefined-content">
+<div areaid="9e203b38-b3f4-4a33-9e4a-73720a693f8c" ckeditortoolbarsname="CkEditorToolBarLight" class="inlineEditor" contenteditable="false" id="bcw_069d92d6-0984-4a04-bda9-ecfdce3d988b_9e203b38-b3f4-4a33-9e4a-73720a693f8c" title="" widgetdataid="069d92d6-0984-4a04-bda9-ecfdce3d988b" widgetid="22a14ff4-bc6c-47ef-bdf6-66ad813473e0" widgetname="Content" widgetsystemname="PagePredefined">
+<h2>Charms for Change</h2>
+<div>We fundraise through the sale of wellness-inspired bundles with locally donated products to benefit the Prince George and District Elizabeth Fry Society. In addition, we hope the partnership can help increase community engagement by partnering with local businesses</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<span id="title_5f953085-6a8b-4bab-852f-4d2b7e28c6b5" style="display:none">&lt;div&gt;&lt;span style="color:rgba(255, 255, 255, 1)"&gt;&lt;strong&gt;Current Projects&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="PageWidget" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;padding-right: 0px;">
+<div class="boxContainer1NoFrameNoBorder">
+<div class="boxContainer2NoFrameNoBorder">
+<div class="MainWidgetWrapper CustomWidget">
+<div class="WidgetNoBorder" style="">
+<div style="">
+<div class="WidgetWrapper">
+<div class="CustomWidgetBody">
+<div ckeditortoolbarsname="CkEditorToolBarLight" class="inlineEditor" contenteditable="false" id="bcw_d07ea1cc-0744-4a21-8eab-708cfb7f035e" title="" widgetdataid="d07ea1cc-0744-4a21-8eab-708cfb7f035e" widgetid="46ad117f-edf0-4c86-b438-18eed9de0109" widgetname="Ready to make an impact? " widgetsystemname="CustomWidget">
+<div class="ready-to-join">
+<div class="rtj-content">
+<h1>Ready to make an impact?</h1>
+<button onclick="window.location.href='https://portal.clubrunner.ca/15849/singleemail/contactus';">Get involved!</button>
+<p>Not sure yet? <a href="https://portal.clubrunner.ca/15849/singleemail/contactus" target="_blank">Join one of our meetings!</a></p>
+<img alt="" class="highlight-arrow" src="assets\2070226.png"/> <img alt="" class="highlight-arrow" src="assets\2070226.png"/> <img alt="" class="highlight-arrow" src="assets\2070226.png"/></div>
+</div>
+</div>
+</div>
+<span id="title_d07ea1cc-0744-4a21-8eab-708cfb7f035e" style="display:none">&lt;div&gt;Ready to make an impact?&lt;/div&gt;
+
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section></div></section>
+<section class="band-8 band-wrapper band-dk"><div class="container"><div class="col-xs-12 single-column">
+<section class="PageWidget" style="">
+<div class="boxContainer1NoFrameNoBorder">
+<div class="boxContainer2NoFrameNoBorder">
+<div class="MainWidgetWrapper AdvertisementHomePage">
+<div class="WidgetNoBorder" style="">
+<div style="">
+<div class="WidgetWrapper">
+<script type="text/javascript">
+	var advertisementIds = [];
+
+	
+
+				advertisementIds.push( 'fb81e495-9d2a-4e06-8f65-63786fb76fcb' )
+			
+				advertisementIds.push( '392c5dcc-be3d-489e-ada3-6ab248aacfdd' )
+			
+				advertisementIds.push( 'dab4ad7d-ea3f-456b-829c-67ef687163ab' )
+			
+				advertisementIds.push( '57462a90-b940-468d-a87f-2b78a1d3b0bd' )
+			
+				advertisementIds.push( '32a403d7-9ac6-4207-aa35-bfae34b7d2a3' )
+			
+				advertisementIds.push( 'c4d34eda-3772-4715-a414-315d7f7f4694' )
+			
+				advertisementIds.push( 'b26fa236-0d0b-4ec0-b02f-1c88a9e67ac3' )
+			
+				advertisementIds.push( '90d1f981-e72f-414d-86ba-02b5a19bf080' )
+			
+				advertisementIds.push( '4d69ebcb-7a41-42c8-b981-921c8b69b2ed' )
+			
+				advertisementIds.push( '16976d9f-63fa-46bc-86c6-3b0c9c371400' )
+			
+				advertisementIds.push( 'd09abb01-614a-4a7e-bd5a-b10909c91232' )
+			
+				advertisementIds.push( 'ec9b3615-0c3a-4aaf-8b08-4411a05de8cb' )
+			
+				advertisementIds.push( '6f8a76e2-31a4-4beb-875b-e4cfca7521ff' )
+			
+				advertisementIds.push( 'a11c4e31-4bf2-4902-90a4-30616298bc2b' )
+			
+	$(
+		function() 
+		{
+			var randno = Math.floor ( Math.random() * advertisementIds.length );
+			$("#AdvertisementHomePageRotator #div_cra_" + advertisementIds[randno]).show();
+		}
+	);
+</script>
+<div class="AdvertisementHomePageRotator" id="AdvertisementHomePageRotator">
+<div class="advertisementHomePageItemContainer1" id="div_cra_fb81e495-9d2a-4e06-8f65-63786fb76fcb" style="display:none;">
+<div class="advertisementHomePageItemContainer2">
+<div class="advertisementHomePageItemContainer3">
+<a href="Advertisement/Click?AdvertisementId=fb81e495-9d2a-4e06-8f65-63786fb76fcb&amp;AdvertisementUrl=http://www.bestclubsupplies.com/Rotary-Lapel-Pins/departments/61/" style="background: none;" target="_blank">
+<center>
+<img alt="Advertisement for Russell Hampton" class="lazy-img" data-src="https://clubrunner.blob.core.windows.net/00000000000/Ad/11/05406b47-b512-4a39-a5de-1e48cabfbfd9/fb81e495-9d2a-4e06-8f65-63786fb76fcb/ClubRunner%20-%20Target%20Ad%20(Pins).png" height="56px" loading="lazy" style="border: 0; margin: 0 0 0 0; padding: 0 0 0 0; width: 180px; height: 56px;" width="180px"/>
+</center>
+</a>
+</div>
+</div>
+</div>
+<div class="advertisementHomePageItemContainer1" id="div_cra_392c5dcc-be3d-489e-ada3-6ab248aacfdd" style="display:none;">
+<div class="advertisementHomePageItemContainer2">
+<div class="advertisementHomePageItemContainer3">
+<a href="Advertisement/Click?AdvertisementId=392c5dcc-be3d-489e-ada3-6ab248aacfdd&amp;AdvertisementUrl=http://www.bestclubsupplies.com/Rotary-Club-District-Supplies/departments/33/" style="background: none;" target="_blank">
+<center>
+<img alt="Advertisement for Russell Hampton" class="lazy-img" data-src="https://clubrunner.blob.core.windows.net/00000000000/Ad/11/05406b47-b512-4a39-a5de-1e48cabfbfd9/392c5dcc-be3d-489e-ada3-6ab248aacfdd/ClubSupplies.jpg" height="56px" loading="lazy" style="border: 0; margin: 0 0 0 0; padding: 0 0 0 0; width: 180px; height: 56px;" width="180px"/>
+</center>
+</a>
+</div>
+</div>
+</div>
+<div class="advertisementHomePageItemContainer1" id="div_cra_dab4ad7d-ea3f-456b-829c-67ef687163ab" style="display:none;">
+<div class="advertisementHomePageItemContainer2">
+<div class="advertisementHomePageItemContainer3">
+<a href="Advertisement/Click?AdvertisementId=dab4ad7d-ea3f-456b-829c-67ef687163ab&amp;AdvertisementUrl=http://www.bestclubsupplies.com/Rotary-Awards-Plaques/departments/81/" style="background: none;" target="_blank">
+<center>
+<img alt="Advertisement for Russell Hampton" class="lazy-img" data-src="https://clubrunner.blob.core.windows.net/00000000000/Ad/11/05406b47-b512-4a39-a5de-1e48cabfbfd9/dab4ad7d-ea3f-456b-829c-67ef687163ab/Awards.jpg" height="56px" loading="lazy" style="border: 0; margin: 0 0 0 0; padding: 0 0 0 0; width: 180px; height: 56px;" width="180px"/>
+</center>
+</a>
+</div>
+</div>
+</div>
+<div class="advertisementHomePageItemContainer1" id="div_cra_57462a90-b940-468d-a87f-2b78a1d3b0bd" style="display:none;">
+<div class="advertisementHomePageItemContainer2">
+<div class="advertisementHomePageItemContainer3">
+<a href="Advertisement/Click?AdvertisementId=57462a90-b940-468d-a87f-2b78a1d3b0bd&amp;AdvertisementUrl=http://www.bestclubsupplies.com/Rotary-Trading-Banners/products/96/" style="background: none;" target="_blank">
+<center>
+<img alt="Advertisement for Russell Hampton" class="lazy-img" data-src="https://clubrunner.blob.core.windows.net/00000000000/Ad/11/05406b47-b512-4a39-a5de-1e48cabfbfd9/57462a90-b940-468d-a87f-2b78a1d3b0bd/TradingBanners.jpg" height="56px" loading="lazy" style="border: 0; margin: 0 0 0 0; padding: 0 0 0 0; width: 180px; height: 56px;" width="180px"/>
+</center>
+</a>
+</div>
+</div>
+</div>
+<div class="advertisementHomePageItemContainer1" id="div_cra_32a403d7-9ac6-4207-aa35-bfae34b7d2a3" style="display:none;">
+<div class="advertisementHomePageItemContainer2">
+<div class="advertisementHomePageItemContainer3">
+<a href="Advertisement/Click?AdvertisementId=32a403d7-9ac6-4207-aa35-bfae34b7d2a3&amp;AdvertisementUrl=http://www.bestclubsupplies.com/Rotary-Customized-Items/products/191/" style="background: none;" target="_blank">
+<center>
+<img alt="Advertisement for Russell Hampton" class="lazy-img" data-src="https://clubrunner.blob.core.windows.net/00000000000/Ad/11/05406b47-b512-4a39-a5de-1e48cabfbfd9/32a403d7-9ac6-4207-aa35-bfae34b7d2a3/TradingBanners.jpg" height="56px" loading="lazy" style="border: 0; margin: 0 0 0 0; padding: 0 0 0 0; width: 180px; height: 56px;" width="180px"/>
+</center>
+</a>
+</div>
+</div>
+</div>
+<div class="advertisementHomePageItemContainer1" id="div_cra_c4d34eda-3772-4715-a414-315d7f7f4694" style="display:none;">
+<div class="advertisementHomePageItemContainer2">
+<div class="advertisementHomePageItemContainer3">
+<a href="Advertisement/Click?AdvertisementId=c4d34eda-3772-4715-a414-315d7f7f4694&amp;AdvertisementUrl=http://shop.clubsupplies.com/departments.asp?dept=31" style="background: none;" target="_blank">
+<center>
+<img alt="Advertisement for Russell Hampton" class="lazy-img" data-src="https://clubrunner.blob.core.windows.net/00000000000/Ad/11/05406b47-b512-4a39-a5de-1e48cabfbfd9/c4d34eda-3772-4715-a414-315d7f7f4694/ClubSupplies.jpg" height="56px" loading="lazy" style="border: 0; margin: 0 0 0 0; padding: 0 0 0 0; width: 180px; height: 56px;" width="180px"/>
+</center>
+</a>
+</div>
+</div>
+</div>
+<div class="advertisementHomePageItemContainer1" id="div_cra_b26fa236-0d0b-4ec0-b02f-1c88a9e67ac3" style="display:none;">
+<div class="advertisementHomePageItemContainer2">
+<div class="advertisementHomePageItemContainer3">
+<a href="Advertisement/Click?AdvertisementId=b26fa236-0d0b-4ec0-b02f-1c88a9e67ac3&amp;AdvertisementUrl=http://shop.clubsupplies.com/departments.asp?dept=8" style="background: none;" target="_blank">
+<center>
+<img alt="Advertisement for Russell Hampton" class="lazy-img" data-src="https://clubrunner.blob.core.windows.net/00000000000/Ad/11/05406b47-b512-4a39-a5de-1e48cabfbfd9/b26fa236-0d0b-4ec0-b02f-1c88a9e67ac3/ClubSupplies.jpg" height="56px" loading="lazy" style="border: 0; margin: 0 0 0 0; padding: 0 0 0 0; width: 180px; height: 56px;" width="180px"/>
+</center>
+</a>
+</div>
+</div>
+</div>
+<div class="advertisementHomePageItemContainer1" id="div_cra_90d1f981-e72f-414d-86ba-02b5a19bf080" style="display:none;">
+<div class="advertisementHomePageItemContainer2">
+<div class="advertisementHomePageItemContainer3">
+<a href="Advertisement/Click?AdvertisementId=90d1f981-e72f-414d-86ba-02b5a19bf080&amp;AdvertisementUrl=http://shop.clubsupplies.com/departments.asp?dept=113" style="background: none;" target="_blank">
+<center>
+<img alt="Advertisement for Russell Hampton" class="lazy-img" data-src="https://clubrunner.blob.core.windows.net/00000000000/Ad/11/05406b47-b512-4a39-a5de-1e48cabfbfd9/90d1f981-e72f-414d-86ba-02b5a19bf080/ClubSupplies.jpg" height="56px" loading="lazy" style="border: 0; margin: 0 0 0 0; padding: 0 0 0 0; width: 180px; height: 56px;" width="180px"/>
+</center>
+</a>
+</div>
+</div>
+</div>
+<div class="advertisementHomePageItemContainer1" id="div_cra_4d69ebcb-7a41-42c8-b981-921c8b69b2ed" style="display:none;">
+<div class="advertisementHomePageItemContainer2">
+<div class="advertisementHomePageItemContainer3">
+<a href="Advertisement/Click?AdvertisementId=4d69ebcb-7a41-42c8-b981-921c8b69b2ed&amp;AdvertisementUrl=http://shop.clubsupplies.com/departments.asp?dept=54" style="background: none;" target="_blank">
+<center>
+<img alt="Advertisement for Russell Hampton" class="lazy-img" data-src="https://clubrunner.blob.core.windows.net/00000000000/Ad/11/05406b47-b512-4a39-a5de-1e48cabfbfd9/4d69ebcb-7a41-42c8-b981-921c8b69b2ed/ClubSupplies.jpg" height="56px" loading="lazy" style="border: 0; margin: 0 0 0 0; padding: 0 0 0 0; width: 180px; height: 56px;" width="180px"/>
+</center>
+</a>
+</div>
+</div>
+</div>
+<div class="advertisementHomePageItemContainer1" id="div_cra_16976d9f-63fa-46bc-86c6-3b0c9c371400" style="display:none;">
+<div class="advertisementHomePageItemContainer2">
+<div class="advertisementHomePageItemContainer3">
+<a href="Advertisement/Click?AdvertisementId=16976d9f-63fa-46bc-86c6-3b0c9c371400&amp;AdvertisementUrl=http://shop.clubsupplies.com/departments.asp?dept=90" style="background: none;" target="_blank">
+<center>
+<img alt="Advertisement for Russell Hampton" class="lazy-img" data-src="https://clubrunner.blob.core.windows.net/00000000000/Ad/11/05406b47-b512-4a39-a5de-1e48cabfbfd9/16976d9f-63fa-46bc-86c6-3b0c9c371400/ClubSupplies.jpg" height="56px" loading="lazy" style="border: 0; margin: 0 0 0 0; padding: 0 0 0 0; width: 180px; height: 56px;" width="180px"/>
+</center>
+</a>
+</div>
+</div>
+</div>
+<div class="advertisementHomePageItemContainer1" id="div_cra_d09abb01-614a-4a7e-bd5a-b10909c91232" style="display:none;">
+<div class="advertisementHomePageItemContainer2">
+<div class="advertisementHomePageItemContainer3">
+<a href="Advertisement/Click?AdvertisementId=d09abb01-614a-4a7e-bd5a-b10909c91232&amp;AdvertisementUrl=http://site.clubrunner.ca" style="background: none;" target="_blank">
+<center>
+<img alt="Advertisement for ClubRunner" class="lazy-img" data-src="https://clubrunner.blob.core.windows.net/00000000000/Ad/11/e4ecb97d-ca5a-4ded-840d-60eb528ad3d8/d09abb01-614a-4a7e-bd5a-b10909c91232/Rotary%20Software%20for%20Clubs%20and%20Districts-01.png" height="56px" loading="lazy" style="border: 0; margin: 0 0 0 0; padding: 0 0 0 0; width: 180px; height: 56px;" width="180px"/>
+</center>
+</a>
+</div>
+</div>
+</div>
+<div class="advertisementHomePageItemContainer1" id="div_cra_ec9b3615-0c3a-4aaf-8b08-4411a05de8cb" style="display:none;">
+<div class="advertisementHomePageItemContainer2">
+<div class="advertisementHomePageItemContainer3">
+<a href="Advertisement/Click?AdvertisementId=ec9b3615-0c3a-4aaf-8b08-4411a05de8cb&amp;AdvertisementUrl=https://site.clubrunner.ca/page/mobile" style="background: none;" target="_blank">
+<center>
+<img alt="Advertisement for ClubRunner" class="lazy-img" data-src="https://clubrunner.blob.core.windows.net/00000000000/Ad/11/e4ecb97d-ca5a-4ded-840d-60eb528ad3d8/ec9b3615-0c3a-4aaf-8b08-4411a05de8cb/MobileApp-01-01.png" height="56px" loading="lazy" style="border: 0; margin: 0 0 0 0; padding: 0 0 0 0; width: 180px; height: 56px;" width="180px"/>
+</center>
+</a>
+</div>
+</div>
+</div>
+<div class="advertisementHomePageItemContainer1" id="div_cra_6f8a76e2-31a4-4beb-875b-e4cfca7521ff" style="display:none;">
+<div class="advertisementHomePageItemContainer2">
+<div class="advertisementHomePageItemContainer3">
+<a href="Advertisement/Click?AdvertisementId=6f8a76e2-31a4-4beb-875b-e4cfca7521ff&amp;AdvertisementUrl=https://site.clubrunner.ca/Page/rotary" style="background: none;" target="_blank">
+<center>
+<img alt="Advertisement for ClubRunner" class="lazy-img" data-src="https://clubrunner.blob.core.windows.net/00000000000/Ad/11/e4ecb97d-ca5a-4ded-840d-60eb528ad3d8/6f8a76e2-31a4-4beb-875b-e4cfca7521ff/Official%20Licensee%20Ad-01.png" height="56px" loading="lazy" style="border: 0; margin: 0 0 0 0; padding: 0 0 0 0; width: 180px; height: 56px;" width="180px"/>
+</center>
+</a>
+</div>
+</div>
+</div>
+<div class="advertisementHomePageItemContainer1" id="div_cra_a11c4e31-4bf2-4902-90a4-30616298bc2b" style="display:none;">
+<div class="advertisementHomePageItemContainer2">
+<div class="advertisementHomePageItemContainer3">
+<a href="Advertisement/Click?AdvertisementId=a11c4e31-4bf2-4902-90a4-30616298bc2b&amp;AdvertisementUrl=https://site.clubrunner.ca/mobile" style="background: none;" target="_blank">
+<center>
+<img alt="Advertisement for ClubRunner Mobile" class="lazy-img" data-src="https://clubrunner.blob.core.windows.net/00000000000/Ad/11/748f896c-400b-4f77-8bc2-4de63b92aff2/a11c4e31-4bf2-4902-90a4-30616298bc2b/MobileApp2-01.png" height="56px" loading="lazy" style="border: 0; margin: 0 0 0 0; padding: 0 0 0 0; width: 180px; height: 56px;" width="180px"/>
+</center>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></div></section>
+</div>
+</main>
+<footer class="footer-band">
+<div id="footerContainer1">
+<div class="footerDecoration">
+</div>
+<div id="footerContainer2">
+<div id="footerContainer3">
+<div id="footerContainer4"><div class="WebsiteFooter footer-list-display S4-WhiteAzure VisionFloating">
+<div class="container">
+<div class="website-footer">
+<div class="container-fluid"><div class="row"><div class="col-sm-4 info"><p><img src="assets\Logo-Rotaract-300x300.png" width="60"/>All materials, unless otherwise specified, copyright of Rotaract club of Prince George.</p><p>All Rotary copyrighted content is owned by Rotary International, used with permission.</p></div><div class="col-sm-4 links"><h1>Links</h1><div class="the-links"><a href="">Home</a> <a href="Page/club-executives">Club Executives</a> <a href="stories">Stories</a> <a href="calendar">Calendar</a> <a href="singleemail/contactus">Contact us</a> <a href="get-involved">Get involved</a> </div></div><div class="col-sm-4 contact"><h1>Contact us</h1><div class="the-links"><a href="https://www.instagram.com/rotaractprincegeorge/" target="_blank"><p><img alt="" src="assets\instagram.png"/>Instagram</p></a> <a href="https://www.facebook.com/rotaractprincegeorge/" target="_blank"><p><img alt="" src="assets\facebook.png"/>Facebook</p></a> <a href="mailto:rotaractprincegeorge@gmail.com" target="_blank"><p><img alt="" src="assets\email.png"/>rotaractprincegeorge@gmail.com</p></a></div></div></div></div>
+</div>
+</div>
+</div>
+<div class="system-footer">
+<div class="container">
+<a class="edit-page" href="#" id="editContentLink" style="display: none;" target="_blank" title="Edit this page">
+<div class="edit-page-block pulse-icon pulse-once">
+<span class="sr-only">Edit this page</span>
+<i aria-hidden="true" class="fas fa-pencil-alt"></i>
+</div>
+</a>
+
+</div>
+</div>
+<div id="TraceInfoFooter">
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<script>
+                    document.querySelectorAll( 'oembed[url]' ).forEach( element => 
+                    {
+                        //console.log('processing element ' + element);
+                        iframely.load( element, element.attributes.url.value );
+                    } );
+                </script>
+<span app-name="crportal" app-type="appservice" branch="refs/heads/production" revision="f029bcfb9a9cd6fdae59ff1fa89c226db03867d1" revision-date="06 Aug 2024 17:47" style="display: none"></span>
+</body>
+</html>
