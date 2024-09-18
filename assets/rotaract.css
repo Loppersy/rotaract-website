@@ -1181,3 +1181,20 @@ body:has(.page.custom-calendar) #AdvertisementHomePageRotator{
   max-height: 200px;
   min-height: 100px;
 }
+
+
+.scribble_link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  pointer-events: none; /* Disable clicking */
+  cursor: default;      /* Change cursor to default (not clickable) */
+  color: inherit;       /* Keep the text color */
+}
+.scribble {
+  position: absolute;
+  top: 5px; /* Adjust to position SVG closer or further from the text */
+  left: 0;
+  height: 25px; /* Set the height of the scribble */
+  z-index: 1; /* Place behind text */
+}

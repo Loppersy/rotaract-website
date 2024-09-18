@@ -216,60 +216,82 @@
 </div>
 <div id="TraceInfo">
 </div>
-<nav aria-label="page navigation" class="navbar navbar-default">
-<div class="container float-menu-vertical-align">
-<div class="navbar-header">
-<button aria-controls="navbar" aria-expanded="false" class="navbar-toggle" data-target="#navbar" data-toggle="collapse" type="button">
+    <nav aria-label="page navigation" class="navbar navbar-default">
+        <div class="container float-menu-vertical-align">
+            <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle" data-target="#navbar" data-toggle="collapse" type="button">
 <span class="sr-only">
         Toggle navigation
        </span>
-<span class="icon-bar">
+                    <span class="icon-bar">
 </span>
-<span class="icon-bar">
+                    <span class="icon-bar">
 </span>
-<span class="icon-bar">
+                    <span class="icon-bar">
 </span>
-</button>
-<a class="navbar-brand" href="" tabindex="-1">
-<img alt="Prince George Rotaract logo" role="img" src="assets/LightBG_lightbgrotaract-logo_20230801-005915.png"/>
-</a>
-</div>
-<div aria-expanded="true" class="navbar-collapse collapse" id="navbar">
-<ul class="nav navbar-nav">
-<li class="">
-<a class="" href="index.html" tabindex="0" target="_self" title="">
-         Home
-        </a>
-</li>
-<li class="">
-<a class="" href="club-executives.html" tabindex="0" target="_self" title="">
-         Club Executives
-        </a>
-</li>
-<li class="">
-<a class="" href="stories.html" tabindex="0" target="_self" title="">
-         Stories
-        </a>
-</li>
-<li class="">
-<a class="" href="" tabindex="0" target="_self" title="">
-         Events Calendar
-        </a>
-</li>
-<li class="">
-<a class="menu-item menu-item-secondary" href="Hoop-A-Thon.html" tabindex="0" target="_self" title="">
-         Hoop-A-Thon 2024
-        </a>
-</li>
-<li class="">
-<a class="menu-item menu-item-primary" href="contactus.html" tabindex="0" target="_self" title="">
-         Contact us
-        </a>
-</li>
-</ul>
-</div>
-</div>
-</nav>
+                </button>
+                <a class="navbar-brand" href="" tabindex="-1">
+                    <img alt="Prince George Rotaract logo" role="img" src="assets/LightBG_lightbgrotaract-logo_20230801-005915.png"/>
+                </a>
+            </div>
+            <div aria-expanded="true" class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a class="" href="index.html" tabindex="0" target="_self" title="">Home</a></li>
+                    <li><a class="" href="club-executives.html" tabindex="0" target="_self" title="">Club Executives</a></li>
+                    <li><a class="" href="stories.html" tabindex="0" target="_self" title="">Stories</a></li>
+                    <li><a class="scribble_link" href="#" data-scribble-color="pink" tabindex="0" target="_self" title="">Events Calendar</a></li>
+                    <li><a class="menu-item menu-item-secondary" href="Hoop-A-Thon.html" tabindex="0" target="_self" title="">Hoop-A-Thon 2024</a></li>
+                    <li><a class="menu-item menu-item-primary scribble_link" href="#" data-scribble-color="white" tabindex="0" target="_self" title="">Contact us</a></li>
+                </ul>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    // Select all links that should have the scribble effect
+                    const links = document.querySelectorAll('.scribble_link');
+
+                    links.forEach(link => {
+                        // Get the desired color from the data attribute or default to pink
+                        const scribbleColor = link.getAttribute('data-scribble-color') === 'white' ? '#FFFFFF' : '#BD245F';
+
+                        // Measure the width of the link element
+                        const textWidth = link.offsetWidth;
+
+                        // Create the SVG element
+                        const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                        svg.classList.add('scribble');
+                        svg.setAttribute('width', textWidth);
+                        svg.setAttribute('height', '20'); // Set the desired height
+                        svg.setAttribute('viewBox', `0 0 ${textWidth} 20`);
+                        svg.setAttribute('preserveAspectRatio', 'none');
+
+                        // Create the path element with a frequent up-and-down motion
+                        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                        path.setAttribute('d', `M14 15
+            C 28 0, 28 17, 30 15
+            C 32 0, 40 17, 42 15
+            C 53 0, 52 17, 54 15
+            C 67 0, 64 17, 66 15
+            C 71 0, 76 17, 78 15
+            C 89 0, 88 17, 98 15`);
+                        path.setAttribute('stroke', scribbleColor);
+                        path.setAttribute('stroke-width', '5');
+                        path.setAttribute('fill', 'none');
+                        path.setAttribute('stroke-linecap', 'round');
+                        path.setAttribute('stroke-linejoin', 'round');
+
+                        // Append the path to the SVG
+                        svg.appendChild(path);
+
+                        // Append the SVG to the link
+                        link.appendChild(svg);
+                    });
+                });
+            </script>
+
+
+        </div>
+    </nav>
 </div>
 <main class="main-content-wrapper page custom-hoop-a-thon">
 <div class="content-wrapper">
